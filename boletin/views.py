@@ -6,8 +6,9 @@ def inicio(request):
     form = RegForm()
     if form.is_valid():
         form_data = form.cleaned_data
-        print(form_data.get("email"))
-        print(form_data.get("nombre"))
+        abc = (form_data.get("email"))
+        abc2 = (form_data.get("nombre"))
+        obj = Registrado.objects.create(email=abc, nombre=abc2)
     context = {
         "el_form" : form,
     }
