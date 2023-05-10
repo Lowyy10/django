@@ -2,6 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from .models import Registrado
+from .forms import RegModelForm
 
 class AdminRegistrado(admin.ModelAdmin):
     list_display=["email","nombre","timestamp"]
