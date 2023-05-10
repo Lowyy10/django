@@ -5,7 +5,9 @@ from .forms import RegForm
 def inicio(request):
     form = RegForm()
     if form.is_valid():
-        print(form.cleaned_data)
+        form_data = form.cleaned_data
+        print(form_data.get("email"))
+        print(form_data.get("nombre"))
     context = {
         "el_form" : form,
     }
