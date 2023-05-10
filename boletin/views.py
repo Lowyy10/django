@@ -27,6 +27,10 @@ def inicio(request):
         context = {
             "titulo": "Gracias %s!" %(nombre)
         }
+        if not nombre:
+            context={
+                "titulo": "Gracias persona sin nombre"
+            }
         print(instance)
         print(instance.timestamp)
         #abc = (form_data.get("email"))
