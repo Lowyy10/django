@@ -14,6 +14,9 @@ class RegModelForm(forms.ModelForm):
         if not extension == "edu":
             raise forms.ValidationError("Correo no Valido")
         return email
+    def clean_email(self):
+        nombre = self.CharField_data.get("nombre")
+        return nombre
 
         
 class RegForm(forms.Form):
