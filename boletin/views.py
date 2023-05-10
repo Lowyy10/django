@@ -12,6 +12,9 @@ def inicio(request):
     if form.is_valid():
         instance = form.save(commit=False)
         #form_data = form.cleaned_data
+        instance.save()
+        print(instance)
+        print(instance.timestamp)
         #abc = (form_data.get("email"))
         #abc2 = (form_data.get("nombre"))
         #obj = Registrado.objects.create(email=abc, nombre=abc2)
