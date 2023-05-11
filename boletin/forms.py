@@ -21,6 +21,6 @@ class RegModelForm(forms.ModelForm):
 
         
 class ContactForm(forms.Form):
-    nombre = forms.CharField()
+    nombre = forms.CharField(required=False)
     email = forms.EmailField()
     mensaje = forms.CharField(widget=forms.Textarea)
