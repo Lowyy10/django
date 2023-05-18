@@ -55,7 +55,7 @@ def contact(request):
         send_mail(asunto,
             mensaje_email,
             email_from,
-            [email_to],
+            email_to,
             fail_silently=True)
     context = {
         "form": form,
