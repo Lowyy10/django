@@ -12,6 +12,7 @@
   </p>
 </div>
 <div class='col-sm-6' style='background-color: black;height: 300px;'>
+    <br>
 </div>
 {% endblock %}
 
@@ -24,9 +25,21 @@
 <br/>
 
 {% block content %}
-<form method="POST" action="">{% csrf_token %}
-{{ el_form|crispy }}
-<input type='submit' value="Registrame">
-</form>
+<div class="row">
+    <div class="col-sm-3 pull-right">
+        <form method="POST" action="">{% csrf_token %}
+        {{ el_form|crispy }}
+    <input type='submit' value="Registrame">
+    </form>
+    </div>
+    <div class="col-sm-3">
+        <p class="lead text-aling-center">Pagina de Luis</p>
+    </div>
+    <div class="col-sm-3">
+        <p class="lead text-aling-center">Django</p>
+    </div>
+    <div class="col-sm-3">
+        <p class="lead text-aling-center">Carlita</p>
+    </div>
 <hr/>
 {% endblock %}
