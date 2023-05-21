@@ -6,7 +6,7 @@
 <div class='row'>
     <div class='col-sm-6'>
   <h1>Pagina Luis</h1>
-  <p>Proyecto de Django</p>
+  <p class="lead">Proyecto de Django</p>
   <p>
     <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Únete &raquo;</a>
   </p>
@@ -17,7 +17,7 @@
 {% endblock %}
 
 
-{{ titulo }}
+<p class='lead '>{{ titulo }}</p>
 <br/>
 {{ request.user }}
 
@@ -32,14 +32,9 @@
     <input type='submit' value="Registrame">
     </form>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-6">
         <p class="lead text-aling-center">Pagina de Luis</p>
     </div>
-    <div class="col-sm-3">
-        <p class="lead text-aling-center">Django</p>
-    </div>
-    <div class="col-sm-3">
-        <p class="lead text-aling-center">Carlita</p>
-    </div>
+
 <hr/>
 {% endblock %}
