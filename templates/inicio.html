@@ -1,6 +1,17 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 {% block  head_title %}Bienvenido | {{ block.super }}{% endblock %}
+
+
+<style>
+    {% block style %}
+    .jumbotron{
+        background-color: #0a7198 !important;
+        color: white !important;
+    }
+    {% endblock %}
+    </style>
+
 {% block jumbotron_content %}
 
 <div class='row'>
@@ -11,8 +22,8 @@
     <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Únete &raquo;</a>
   </p>
 </div>
-<div class='col-sm-6' style='background-color: black;height: 300px;'>
-    <br>
+<div class='col-sm-6'>
+    <img src="https://img.freepik.com/foto-gratis/disparo-gran-angular-solo-arbol-que-crece-cielo-nublado-puesta-sol-rodeada-cesped_181624-22807.jpg" />
 </div>
 {% endblock %}
 
